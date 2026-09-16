@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rebecca Curto — Jazz Vocalist based in Boston.">
+  <title>Rebecca Curto — Jazz Vocalist</title>
+  <style>
+    :root{
+      --ink:#11100f; --cream:#f4efe6; --gold:#b9965b; --muted:#bdb4a7;
+      --line:rgba(244,239,230,.18);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ink);color:var(--cream);font-family:Georgia,"Times New Roman",serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px 6vw;background:linear-gradient(rgba(17,16,15,.9),transparent);backdrop-filter:blur(5px)}
+    .brand{font-size:1.1rem;letter-spacing:.16em;text-transform:uppercase}
+    .links{display:flex;gap:28px;font:12px/1 Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+    .links a:hover{color:var(--gold)}
+    .hero{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch}
+    .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:120px 7vw 70px}
+    .eyebrow{font:11px/1.4 Arial,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+    h1{font-size:clamp(4rem,9vw,8.5rem);line-height:.88;font-weight:400;margin:0 0 30px;letter-spacing:-.05em}
+    .subtitle{font-size:1.35rem;color:#ddd3c5;max-width:520px}
+    .cta{display:inline-block;margin-top:36px;border:1px solid var(--gold);padding:13px 22px;font:11px/1 Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;width:max-content}
+    .cta:hover{background:var(--gold);color:var(--ink)}
+    .hero-photo{min-height:100vh;background:url('assets/rebecca-curto-live.jpg') center center/cover no-repeat;position:relative}
+    .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink),transparent 35%,rgba(0,0,0,.1))}
+    section{padding:110px 7vw;border-top:1px solid var(--line)}
+    .section-grid{display:grid;grid-template-columns:.35fr .65fr;gap:8vw;max-width:1200px;margin:auto}
+    .section-label{font:11px/1.4 Arial,sans-serif;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}
+    h2{font-size:clamp(2.4rem,5vw,5rem);font-weight:400;line-height:1;margin:0 0 28px;letter-spacing:-.03em}
+    p{font-size:1.12rem;color:#d8d0c4;margin:0 0 20px}
+    .quote{font-size:1.65rem;line-height:1.35;color:var(--cream);margin-top:36px}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}
+    .card{border:1px solid var(--line);padding:25px}
+    .card strong{display:block;font-size:1.2rem;font-weight:400;margin-bottom:8px}
+    .card span{font:11px/1.5 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+    .contact{background:var(--cream);color:var(--ink)}
+    .contact p{color:#403c37}
+    .contact .section-label{color:#806437}
+    .email{font-size:clamp(1.7rem,4vw,3.8rem);word-break:break-word}
+    footer{padding:28px 7vw;display:flex;justify-content:space-between;gap:20px;font:11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+    @media(max-width:800px){
+      .links{display:none}.hero{grid-template-columns:1fr}.hero-copy{min-height:72vh}.hero-photo{min-height:48vh}
+      .section-grid{grid-template-columns:1fr;gap:35px}.cards{grid-template-columns:1fr}section{padding:80px 7vw}
+      footer{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="#top">Rebecca Curto</a>
+    <div class="links">
+      <a href="#about">About</a><a href="#music">Music</a><a href="#videos">Videos</a><a href="#articles">Articles</a><a href="#live">Live</a><a href="#contact">Contact</a><a href="https://www.instagram.com/curtorebeccaa/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero" style="padding:0;border:0">
+      <div class="hero-copy">
+        <div class="eyebrow">Singer</div>
+        <h1>Rebecca<br>Curto</h1>
+        <div class="subtitle">A singer and storyteller from Italy, continuing an active musical career in Italy while studying at Berklee College of Music.</div>
+        <a class="cta" href="#contact">Booking & Contact</a>
+      </div>
+      <div class="hero-photo" aria-label="Rebecca Curto performing live"></div>
+    </section>
+
+    <section id="about">
+      <div class="section-grid">
+        <div class="section-label">About</div>
+        <div>
+          <h2>Voice, story,<br>improvisation.</h2>
+          <p>Rebecca Curto is a singer from Northern Italy, currently studying at Berklee College of Music while continuing her musical activity in Italy. Her musical identity is rooted in storytelling, jazz tradition and intimate performance.</p>
+          <p>She grew up inspired by Italian singer-songwriters of the 1930s–60s, including Luigi Tenco, Fred Bongusto and Bruno Martino, alongside American jazz voices such as Sarah Vaughan and Anita O’Day. Gospel harmonies and improvisation complete her sound world.</p>
+          <p class="quote">“I focus my path on the search for sound and expressive purity, finding my ideal dimension in improvisation.”</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="music">
+      <div class="section-grid">
+        <div class="section-label">Musical Language</div>
+        <div>
+          <h2>Classic jazz.<br>Italian sensitivity.</h2>
+          <p>Rebecca combines the elegance of classic jazz from the 1930s–60s with the intimate sensibility of Italian songwriting, creating a musical dialogue shaped by sincere nuances and narrative.</p>
+          <div class="cards">
+            <div class="card"><strong>Jazz & Scat</strong><span>Improvisation · repertoire · vocal technique</span></div>
+            <div class="card"><strong>Ensemble</strong><span>Interplay · listening · collaboration</span></div>
+            <div class="card"><strong>Voice</strong><span>Vocal control · registers · intonation</span></div>
+            <div class="card"><strong>Arrangement</strong><span>Vocal arranging · musical storytelling</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="videos">
+      <div class="section-grid">
+        <div class="section-label">Videos</div>
+        <div>
+          <h2>Live<br>Sessions.</h2>
+          <p>A selection of live performances and videos featuring Rebecca Curto.</p>
+          <div class="cards">
+            <a class="card" href="https://youtu.be/95vo0OdE2cA" target="_blank" rel="noopener">
+              <strong>Watch video 01</strong><span>YouTube · Live performance</span>
+            </a>
+            <a class="card" href="https://youtu.be/-a_2kfDg4JQ?si=0_VzEiCFFKkgeZti" target="_blank" rel="noopener">
+              <strong>Watch video 02</strong><span>YouTube · Live performance</span>
+            </a>
+            <a class="card" href="https://youtu.be/Vr7lPZ2XDYQ?si=9qKliKyl35-YS56I" target="_blank" rel="noopener">
+              <strong>Watch video 03</strong><span>YouTube · Live performance</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="articles">
+      <div class="section-grid">
+        <div class="section-label">Articles</div>
+        <div>
+          <h2>Press &<br>Features.</h2>
+          <p>Articles and features about Rebecca Curto.</p>
+          <div class="cards">
+            <a class="card" href="https://share.google/94xx1cbSh4y8osmAX" target="_blank" rel="noopener">
+              <strong>Read the article</strong><span>Press feature · Google link</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="live">
+      <div class="section-grid">
+        <div class="section-label">Live</div>
+        <div>
+          <h2>Between Italy<br>and music.</h2>
+          <p>Rebecca moves between Italy and Boston, continuing to perform at private events, jazz festivals and venues while pursuing her studies at Berklee College of Music.</p>
+          <div class="cards">
+            <div class="card"><strong>Valdobbiadene Jazz Festival</strong><span>Opening act for Paul Millns</span></div>
+            <div class="card"><strong>Treviso Suona Jazz</strong><span>Festival performance & workshops</span></div>
+            <div class="card"><strong>Cittadella Jazz Festival</strong><span>Live performance</span></div>
+            <div class="card"><strong>Jazzinsieme — Pordenone</strong><span>Live performance</span></div>
+            <div class="card"><strong>The Mad Monkfish — Boston</strong><span>Jazz club performance</span></div>
+            <div class="card"><strong>Women in Blue</strong><span>Jazz vocal quintet · 2023–present</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-grid">
+        <div class="section-label">Booking & Contact</div>
+        <div>
+          <h2>Let’s make<br>music.</h2>
+          <p>For performances, collaborations and booking inquiries:</p>
+          <a class="email" href="mailto:rebeccacurtomusic@gmail.com">rebeccacurtomusic@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Rebecca Curto</span>
+    <span>Singer · Italy</span>
+  </footer>
+</body>
+</html>
